@@ -26,11 +26,19 @@
 // #define SPLIT_HAND_PIN_LOW_IS_LEFT  // High -> right, Low -> left.
 
 /* SPI & PMW3360 settings. */
+// PiPico Settings
 #define SPI_DRIVER SPID0
+#define SPI_MISO_PIN GP20
+#define SPI_SCK_PIN GP18
+#define SPI_MOSI_PIN GP19
+#define POINTING_DEVICE_CS_PIN GP14
+
+/* Waveshare Config
 #define SPI_MISO_PIN GP0
 #define SPI_SCK_PIN GP2
 #define SPI_MOSI_PIN GP3
 #define POINTING_DEVICE_CS_PIN GP1
+*/
 
 #define PMW33XX_LIFTOFF_DISTANCE 0x04
 
